@@ -5,20 +5,11 @@ const input = document.querySelector(".search input");
 const btn = document.querySelector(".search button");
 const icon = document.querySelector(".weather-icon");
 
-// let clear = 'linear-gradient(135deg,#0e9df0,#f7ca02)';
-// let snow = 'linear-gradient(135deg,#ffffff,#0392ff)';
-// let mist = 'linear-gradient(135deg,white,#212120)';
-// let thunder = 'linear-gradient(135deg,#000000,#0d02a8)';
-// let smoke = 'linear-gradient(135deg,#000000,#49484a)';
-// let haze = 'linear-gradient(135deg,#ffffff,#49484a)';
-// let clouds = 'linear-gradient(135deg,#ffffff,#156eeb)';
-
 let sunny = 'linear-gradient(135deg,#0071fa,#fac800)'; 
-let cold = 'linear-gradient(135deg,#ffffff,#02a5f7)'; //
+let cold = 'linear-gradient(135deg,#ffffff,#02a5f7)';
 let rain = 'linear-gradient(135deg,#000000,#0d02a8)';
 let hot = 'linear-gradient(180deg,#ebf702,#fa0b02)'; 
 let cool = 'linear-gradient(135deg,#00ff95,#710aee)'; 
-
 
 const weatherData = async function(cityName){
     try{
@@ -64,44 +55,3 @@ input.addEventListener("keypress",(event)=>{
 btn.addEventListener("click",()=>{
         weatherData(input.value);
 });
-
-
-// Clouds
-// Haze
-// Snow
-// Thunderstorm
-// Mist
-// Smoke
-// Clear
-
-  
-  
-  
-  
-
-// const req = new XMLHttpRequest();
-
-// req.onload = function (){
-//     console.log("It worked");
-//     const data = JSON.parse(this.responseText);
-//     console.log(data);
-// }
-// req.onerror = function (){
-//     console.log("Error");
-//     console.log(this);
-// }
-
-// req.open("GET",apiURL+`&appid=${apiKey}`);
-// req.send();
-
-// fetch(apiURL+`&appid=${apiKey}`)
-//     .then((res)=>{
-//         return res.json();
-//     })
-//     .then((data)=>{
-//         console.log(data);
-//     })
-//     .catch((e)=>{
-//         console.log(e);
-//     })
-
